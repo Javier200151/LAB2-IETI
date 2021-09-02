@@ -17,10 +17,44 @@ public class User
 
     String lastName;
 
+    public User(String id, String name, String email, String lastName, Date createdAt) {
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     Date createdAt;
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public User( UserDto userDto )
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public User(UserDto userDto )
     {
         id = UUID.randomUUID().toString();
         name = userDto.getName();
