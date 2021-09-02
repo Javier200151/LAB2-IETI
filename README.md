@@ -65,6 +65,8 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
     ```
 8. Run your project and verify that the connection is successful.
 
+<img align="center" src="img/success-connection.PNG">
+
 ### Part 3: Implementing the MongoDB Service
 
 1. Create a new package called *repository*.
